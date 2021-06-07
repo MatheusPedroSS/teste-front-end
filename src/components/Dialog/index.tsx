@@ -32,7 +32,7 @@ const FormDialog:React.FC<Props> = ({open, handleClose}) => {
     }
 
    const saveDemanda = () => {
-       if(data != '' && demanda != '') {
+       if(data !== '' && demanda !== '') {
             let dataSpl = data.split('-')
             dados.rows.push({
                 data: dataSpl[2] + "/" + dataSpl[1] + "/" + dataSpl[0] ,

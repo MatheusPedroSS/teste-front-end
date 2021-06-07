@@ -19,7 +19,7 @@ class MenuItem extends Component<Props> {
     }
     render() {
         const onAction = () => {
-            if(this.props.clicked != undefined) {
+            if(this.props.clicked !== undefined) {
                 this.props.clicked(this.props.id, !this.props.selected)
             }
         }
